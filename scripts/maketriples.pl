@@ -170,7 +170,7 @@ sub dump_edges
 			print $filehandler "_:Length".$lengthcount." <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ".$EDGELENGTH." .\n";
 			print $filehandler "_:Length".$lengthcount." ".$HASVALUE." \"".$child->branch_length."\" .\n";
 		}
-		print $filehandler "_:Edge".$current->internal_id."v".$child->internal_id." <ttp://www.w3.org/1999/02/22-rdf-syntax-ns#type> ".$EdgeClass." .\n";
+		print $filehandler "_:Edge".$current->internal_id."v".$child->internal_id." <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ".$EdgeClass." .\n";
 		print $filehandler "_:Edge".$current->internal_id."v".$child->internal_id." ".$EdgeToChildNode." _:Node".($child->internal_id)." .\n";
 		print $filehandler "_:Edge".$current->internal_id."v".$child->internal_id." ".$EdgeToParentNode." _:Node".($current->internal_id)." .\n";	
 		if ($child->branch_length)
