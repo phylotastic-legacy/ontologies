@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+	<!ENTITY localspace "http://purl.obolibrary.org/obo/cdao.owl#" >
+	<!ENTITY cdao "http://purl.obolibrary.org/obo/cdao.owl#" >
+]>
+
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cdao.owl#"
+	 xml:base="http://purl.obolibrary.org/obo/cdao.owl"
+	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	     	 xmlns:cdao="http://purl.obolibrary.org/obo/cdao.owl#"
+	     	 xmlns:owl="http://www.w3.org/2002/07/owl#"
+	     	 xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	     	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         	 xmlns:localspace="http://purl.obolibrary.org/obo/cdao.owl#">
+	    	 <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cdao.owl"/>
+
+
+<owl:NamedIndividual rdf:about="&localspace;Node_14">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_3">
+	 <rdf:type rdf:resource="http://0purl.obolibrary.org/obo/CDAO_0000026"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_14"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_0">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">raccoon</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_1">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_3"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_1">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">bear</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_2">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_3"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_1"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_12">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_14"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_6">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_12"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_2">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">sea_lion</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_4">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_6"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_3">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">seal</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_5">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_6"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_11">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_12"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_9">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000026"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_11"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_4">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">monkey</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_7">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_9"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_4"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_5">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">cat</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_8">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_9"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_5"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_6">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">weasel</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_10">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_11"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_6"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;TU_7">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+	 <rdfs:label rdf:datatype="rdfs;Literal">dog</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Node_13">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000108"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000179 rdf:resource="&localspace;Node_14"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000187 rdf:resource="&localspace;TU_7"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_0">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">0.84600</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;14_3">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_3"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_14"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_1">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">19.19959</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;3_1">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_1"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_3"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_1"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_2">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">6.80041</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;1_2">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_2"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_1"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_3">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">3.87382</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;2_12">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_12"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_2"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_4">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">7.52973</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;12_6">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_6"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_12"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_4"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_5">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">11.99700</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;6_4">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_4"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_6"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_5"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_6">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">12.00300</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;4_5">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_5"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_4"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_6"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_7">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">2.09460</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;5_11">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_11"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_5"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_7"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_8">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">20.59201</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;11_9">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_9"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_11"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_8"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_9">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">100.85930</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;9_7">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_7"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_9"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_9"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_10">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">47.14069</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;7_8">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_8"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_7"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_10"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_11">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">18.87953</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;8_10">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_10"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_8"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_11"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;Length_12">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000046"/>
+	 <cdao:has_Value rdf:datatype="&xsd;decimal">25.46154</cdao:has_Value>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;10_13">
+	 <rdf:type rdf:resource="&cdao;http://purl.obolibrary.org/obo/CDAO_0000139"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000209 rdf:resource="&localspace;Node_13"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000201 rdf:resource="&localspace;Node_10"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000193 rdf:resource="&localspace;Length_12"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&localspace;mytree1">
+	 <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+	 <http://purl.obolibrary.org/obo/CDAO_0000148 rdf:resource="&localspace;Node_14"/>
+</owl:NamedIndividual>
+
+</rdf:RDF>
