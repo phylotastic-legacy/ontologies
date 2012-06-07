@@ -50,8 +50,7 @@ $tucount = 0;
 
 # extract the megatree to be mapped
 
-
-	my $treeio = new Bio::TreeIO(-format => 'newick', -file => $inputfile);
+my $treeio = new Bio::TreeIO(-format => 'newick', -file => $inputfile);
 
 print "Reading input tree\n";
 
@@ -73,10 +72,13 @@ dump_edges($MYFILE,$tree->get_root_node);
 print ".. created edges ..";
 dump_tree($MYFILE);
 
+print "... created tree information ..";
+
 print " .. completed\n";
 #dump_close($MYFILE);
 
 close($MYFILE);
+
 
 
 sub dump_header
@@ -130,6 +132,11 @@ sub dump_nodes
 		{
 			print $filehandler "_:TU".$tucount." <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ".$TU." .\n";
 			print $filehandler "_:TU".$tucount." <http://www.w3.org/2000/01/rdf-schema#label> \"".$node->id."\".\n";
+			
+			print $filehandler "_:Match".$tucount." <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://tnrs.evoio.org/terms/TNRSmatch> .\n";
+			print $filehandler "_:TU".$tucount." <http://tnrs.evoio.org/terms/match> _:Match".$tucount." .\n";
+			print $filehandler "_:Match".$tucount." <http://tnrs.evoio.org/terms/reference> <http://phylotastic.nescent.org/IDs/ID".$tucount.".".$node->id."> .\n";
+			
 			$tucount++;
 		}
 		
