@@ -153,16 +153,6 @@
     
 
 
-    <!-- http://phylotastic.org/terms/tnrs.rdf#sourceId -->
-
-    <owl:DatatypeProperty rdf:about="http://phylotastic.org/terms/tnrs.rdf#sourceId">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:label>sourceId</rdfs:label>
-        <rdfs:comment>The ID of a source queried by a TNRS. TNRS source IDs need to be unique.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://phylotastic.org/terms/tnrs.rdf#sourceName -->
 
     <owl:DatatypeProperty rdf:about="http://phylotastic.org/terms/tnrs.rdf#sourceName">
@@ -219,6 +209,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&terms;references"/>
+                        <owl:onClass rdf:resource="http://phylotastic.org/terms/tnrs.rdf#ResolutionSource"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&terms;references"/>
                         <owl:onClass rdf:resource="&terms2;Taxon"/>
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
@@ -231,11 +226,6 @@
                         <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#matchedName"/>
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="&xsd;string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#sourceId"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="&xsd;NMTOKEN"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#score"/>
@@ -313,12 +303,6 @@
                 <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#hasRank"/>
                 <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;nonNegativeInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#sourceId"/>
-                <owl:someValuesFrom rdf:resource="&xsd;NMTOKEN"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
