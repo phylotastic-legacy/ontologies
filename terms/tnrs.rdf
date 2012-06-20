@@ -5,6 +5,7 @@
     <!ENTITY terms "http://purl.org/dc/terms/" >
     <!ENTITY terms2 "http://rs.tdwg.org/dwc/terms/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
@@ -13,6 +14,7 @@
 
 <rdf:RDF xmlns="http://phylotastic.org/terms/tnrs.rdf#"
      xml:base="http://phylotastic.org/terms/tnrs.rdf"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -153,15 +155,6 @@
     
 
 
-    <!-- http://phylotastic.org/terms/tnrs.rdf#sourceName -->
-
-    <owl:DatatypeProperty rdf:about="http://phylotastic.org/terms/tnrs.rdf#sourceName">
-        <rdfs:label>sourceName</rdfs:label>
-        <rdfs:comment>The name under which a TNRS source is commonly known.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://phylotastic.org/terms/tnrs.rdf#sourceStatus -->
 
     <owl:DatatypeProperty rdf:about="http://phylotastic.org/terms/tnrs.rdf#sourceStatus">
@@ -186,6 +179,12 @@
         <rdfs:label>submittedName</rdfs:label>
         <rdfs:comment>The name that was submitted to the TNRS for resolution.</rdfs:comment>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:DatatypeProperty rdf:about="&dc;title"/>
     
 
 
@@ -307,12 +306,12 @@
                         <owl:onDataRange rdf:resource="&xsd;nonNegativeInteger"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#sourceName"/>
+                        <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#sourceStatus"/>
                         <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                         <owl:onDataRange rdf:resource="&xsd;string"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#sourceStatus"/>
+                        <owl:onProperty rdf:resource="&dc;title"/>
                         <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                         <owl:onDataRange rdf:resource="&xsd;string"/>
                     </owl:Restriction>
