@@ -2,6 +2,8 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY terms2 "http://rs.tdwg.org/dwc/terms/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -12,9 +14,11 @@
 <rdf:RDF xmlns="http://phylotastic.org/terms/tnrs.rdf#"
      xml:base="http://phylotastic.org/terms/tnrs.rdf"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms2="http://rs.tdwg.org/dwc/terms/">
     <owl:Ontology rdf:about="http://phylotastic.org/terms/tnrs.rdf">
         <owl:versionIRI rdf:resource="http://phylotastic.org/terms/2012-06-08/tnrs.rdf"/>
         <owl:imports rdf:resource="http://purl.org/dsw/"/>
@@ -87,6 +91,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:ObjectProperty rdf:about="&terms;references"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -112,16 +122,6 @@
     <owl:DatatypeProperty rdf:about="http://phylotastic.org/terms/tnrs.rdf#hasRank">
         <rdfs:label>hasRank</rdfs:label>
         <rdfs:comment>The suggested rank of a TNRS source among the sources a TNRS queries.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://phylotastic.org/terms/tnrs.rdf#hasURI -->
-
-    <owl:DatatypeProperty rdf:about="http://phylotastic.org/terms/tnrs.rdf#hasURI">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:label>hasURI</rdfs:label>
-        <rdfs:comment>The URI for a TNRS entity, such as the URI for a TNRS source, or for the accepted name reported by a TNRS source. URIs are unique, i.e., two entities with the same value of this property are the same.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -218,14 +218,14 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&terms;references"/>
+                        <owl:onClass rdf:resource="&terms2;Taxon"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#acceptedName"/>
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="&xsd;string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#hasURI"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="&xsd;anyURI"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#matchedName"/>
@@ -313,13 +313,6 @@
                 <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#hasRank"/>
                 <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;nonNegativeInteger"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#hasURI"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
