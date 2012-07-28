@@ -2,25 +2,29 @@
 
 
 <!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY dsw "http://purl.org/dsw/" >
     <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY dwc "http://rs.tdwg.org/dwc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY dwc "http://rs.tdwg.org/dwc/terms/" >
 ]>
 
 
 <rdf:RDF xmlns="http://phylotastic.org/terms/tnrs.rdf#"
      xml:base="http://phylotastic.org/terms/tnrs.rdf"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dsw="http://purl.org/dsw/"
+     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://phylotastic.org/terms/tnrs.rdf">
         <owl:versionIRI rdf:resource="http://phylotastic.org/terms/2012-06-20/tnrs.rdf"/>
         <owl:imports rdf:resource="http://purl.org/dsw/"/>
@@ -78,6 +82,7 @@
         <rdfs:label>resolvesAs</rdfs:label>
         <rdfs:comment>The relationship between a taxonomic unit or entity and its taxonomic name resolution.</rdfs:comment>
         <rdfs:range rdf:resource="http://phylotastic.org/terms/tnrs.rdf#NameResolution"/>
+        <rdfs:domain rdf:resource="&obo;CDAO_0000138"/>
     </owl:ObjectProperty>
     
 
@@ -87,7 +92,6 @@
     <owl:ObjectProperty rdf:about="http://phylotastic.org/terms/tnrs.rdf#usedSource">
         <rdfs:label>usedSource</rdfs:label>
         <rdfs:comment>The relationship between a TNRS resolution request and the resolution sources used by the TNRS in carrying out the request.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://phylotastic.org/terms/tnrs.rdf#ResolutionRequest"/>
         <rdfs:range rdf:resource="http://phylotastic.org/terms/tnrs.rdf#ResolutionSource"/>
     </owl:ObjectProperty>
     
@@ -96,6 +100,12 @@
     <!-- http://purl.org/dc/terms/references -->
 
     <owl:ObjectProperty rdf:about="&dcterms;references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;source"/>
     
 
 
@@ -207,12 +217,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&dcterms;references"/>
+                        <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#usedSource"/>
                         <owl:onClass rdf:resource="http://phylotastic.org/terms/tnrs.rdf#ResolutionSource"/>
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&dcterms;references"/>
+                        <owl:onProperty rdf:resource="&dsw;toTaxon"/>
                         <owl:onClass rdf:resource="&dwc;Taxon"/>
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
@@ -282,7 +292,7 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://phylotastic.org/terms/tnrs.rdf#submitDate"/>
-                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="&xsd;dateTime"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -319,6 +329,14 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:comment>A source used by a Taxonomic Name Resolution Service (TNRS).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000138 -->
+
+    <owl:Class rdf:about="&obo;CDAO_0000138">
+        <rdfs:label>TU</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
