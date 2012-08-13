@@ -2,29 +2,27 @@
 
 
 <!DOCTYPE rdf:RDF [
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY dcterms "http://purl.org/dc/terms/" >
-    <!ENTITY dwc "http://rs.tdwg.org/dwc/terms/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY tc "http://rs.tdwg.org/ontology/voc/TaxonConcept#" >
 ]>
 
 
 <rdf:RDF xmlns="http://phylotastic.org/terms/tnrs.rdf#"
      xml:base="http://phylotastic.org/terms/tnrs.rdf"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tc="http://rs.tdwg.org/ontology/voc/TaxonConcept#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
-     xmlns:tc="http://rs.tdwg.org/ontology/voc/TaxonConcept#">
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://phylotastic.org/terms/tnrs.rdf">
         <owl:versionIRI rdf:resource="http://phylotastic.org/terms/2012-08/tnrs.rdf"/>
         <owl:imports rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonConcept"/>
@@ -223,7 +221,7 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&tc;toTaxon"/>
-                        <owl:onClass rdf:resource="&dwc;Taxon"/>
+                        <owl:onClass rdf:resource="&tc;TaxonConcept"/>
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
@@ -340,10 +338,6 @@
     </owl:Class>
     
 
-
-    <!-- http://rs.tdwg.org/dwc/terms/Taxon -->
-
-    <owl:Class rdf:about="&dwc;Taxon"/>
 </rdf:RDF>
 
 
