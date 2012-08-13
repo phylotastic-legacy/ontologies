@@ -2,7 +2,7 @@
 @prefix : <http://phylotastic.org/terms/tnrs-instance.rdf#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix tnrs: <http://phylotastic.org/terms/tnrs.rdf#> .
-@prefix dsw: <http://purl.org/dsw/> .
+@prefix tc: <http://rs.tdwg.org/ontology/voc/TaxonConcept#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ncbitax: <http://www.ncbi.nlm.nih.gov/taxonomy/> .
 @prefix tropicos: <http://www.tropicos.org/Name/> .
@@ -10,7 +10,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
 
 :otu1
     tnrs:resolvesAs [
@@ -20,7 +19,7 @@
             tnrs:matchedName "Humbertia" ;
             tnrs:score "0.46973019780931" ;
             tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
-            dsw:toTaxon <http://www.tropicos.org/Name/40028244> ;
+            tc:toTaxon <http://www.tropicos.org/Name/40028244> ;
             a tnrs:Match
         ] ;
         tnrs:submittedName "Humbert humbert" ;
@@ -38,14 +37,14 @@
             tnrs:matchedName "Vitis vinifera" ;
             tnrs:score "1.0" ;
             tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
-            dsw:toTaxon <http://www.tropicos.org/Name/34000217> ;
+            tc:toTaxon <http://www.tropicos.org/Name/34000217> ;
             a tnrs:Match
         ], [
             tnrs:acceptedName "Vitis vinifera" ;
             tnrs:matchedName "Vitis vinifera" ;
             tnrs:score "1.0" ;
             tnrs:usedSource <http://www.ncbi.nlm.nih.gov/taxonomy> ;
-            dsw:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/29760> ;
+            tc:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/29760> ;
             a tnrs:Match
         ] ;
         tnrs:submittedName "Vitis vinifera" ;
@@ -63,14 +62,14 @@
             tnrs:matchedName "Mangifera indica" ;
             tnrs:score "0.98210117101673" ;
             tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
-            dsw:toTaxon <http://www.tropicos.org/Name/1300071> ;
+            tc:toTaxon <http://www.tropicos.org/Name/1300071> ;
             a tnrs:Match
         ], [
             tnrs:acceptedName "Mangifera indica" ;
             tnrs:matchedName "Mangifera indica" ;
             tnrs:score "1.0" ;
             tnrs:usedSource <http://www.ncbi.nlm.nih.gov/taxonomy> ;
-            dsw:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/29780> ;
+            tc:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/29780> ;
             a tnrs:Match
         ] ;
         tnrs:submittedName "Magnifera indica" ;
@@ -88,7 +87,7 @@
             tnrs:matchedName "Euthamia" ;
             tnrs:score "0.45701346754469" ;
             tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
-            dsw:toTaxon <http://www.tropicos.org/Name/40007649> ;
+            tc:toTaxon <http://www.tropicos.org/Name/40007649> ;
             a tnrs:Match
         ] ;
         tnrs:submittedName "Eutamias minimus" ;
@@ -106,14 +105,14 @@
             tnrs:matchedName "Pantathera" ;
             tnrs:score "0.47790686999749" ;
             tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
-            dsw:toTaxon <http://www.tropicos.org/Name/40015658> ;
+            tc:toTaxon <http://www.tropicos.org/Name/40015658> ;
             a tnrs:Match
         ], [
             tnrs:acceptedName "Panthera tigris" ;
             tnrs:matchedName "Panthera tigris" ;
             tnrs:score "1.0" ;
             tnrs:usedSource <http://www.ncbi.nlm.nih.gov/taxonomy> ;
-            dsw:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/9694> ;
+            tc:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/9694> ;
             a tnrs:Match
         ] ;
         tnrs:submittedName "Panthera tigris" ;
