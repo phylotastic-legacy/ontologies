@@ -15,7 +15,7 @@
 <text text-anchor="middle" x="887" y="-173.4" font-family="Times,serif" font-size="14.00">http://phylotastic.org/terms/tnrs&#45;instance.rdf#</text>
 <text text-anchor="middle" x="887" y="-159.4" font-family="Times,serif" font-size="14.00">dc: http://purl.org/dc/elements/1.1/</text>
 <text text-anchor="middle" x="887" y="-145.4" font-family="Times,serif" font-size="14.00">tnrs: http://phylotastic.org/terms/tnrs.rdf#</text>
-<text text-anchor="middle" x="887" y="-131.4" font-family="Times,serif" font-size="14.00">dsw: http://purl.org/dsw/</text>
+<text text-anchor="middle" x="887" y="-131.4" font-family="Times,serif" font-size="14.00">tc: http://rs.tdwg.org/ontology/voc/TaxonConcept#</text>
 <text text-anchor="middle" x="887" y="-117.4" font-family="Times,serif" font-size="14.00">dcterms: http://purl.org/dc/terms/</text>
 <text text-anchor="middle" x="887" y="-103.4" font-family="Times,serif" font-size="14.00">ncbitax: http://www.ncbi.nlm.nih.gov/taxonomy/</text>
 <text text-anchor="middle" x="887" y="-89.4" font-family="Times,serif" font-size="14.00">tropicos: http://www.tropicos.org/Name/</text>
@@ -24,7 +24,6 @@
 <text text-anchor="middle" x="887" y="-47.4" font-family="Times,serif" font-size="14.00">owl: http://www.w3.org/2002/07/owl#</text>
 <text text-anchor="middle" x="887" y="-33.4" font-family="Times,serif" font-size="14.00">xsd: http://www.w3.org/2001/XMLSchema#</text>
 <text text-anchor="middle" x="887" y="-19.4" font-family="Times,serif" font-size="14.00">rdf: http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#</text>
-<text text-anchor="middle" x="887" y="-5.4" font-family="Times,serif" font-size="14.00">dwc: http://rs.tdwg.org/dwc/terms/</text>
 <!-- Rrequest -->
 <g id="node1" class="node"><title>Rrequest</title>
 <ellipse fill="none" stroke="blue" cx="618" cy="-1502" rx="36.0055" ry="18"/>
@@ -232,7 +231,7 @@
 <g id="edge20" class="edge"><title>B_:m001&#45;&gt;Rtropicos:34000217</title>
 <path fill="none" stroke="black" d="M636.333,-1906.53C656.005,-1908.13 686.742,-1913.79 704,-1933 731.264,-1963.34 691.503,-1995.91 722,-2023 749.458,-2047.39 842.243,-2050.55 912.933,-2049.11"/>
 <polygon fill="black" stroke="black" points="913.278,-2052.6 923.192,-2048.86 913.111,-2045.6 913.278,-2052.6"/>
-<text text-anchor="middle" x="776" y="-2048.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-2048.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:m003 -->
 <g id="node21" class="node"><title>B_:m003</title>
@@ -277,7 +276,7 @@
 <g id="edge32" class="edge"><title>B_:m003&#45;&gt;Rncbitax:29760</title>
 <path fill="none" stroke="black" d="M622.953,-1593.45C633.993,-1628.63 664.306,-1707.37 722,-1739 764.091,-1762.07 794.131,-1770.9 830,-1739 881.165,-1693.5 801.055,-1635.84 848,-1586 868.825,-1563.89 901.066,-1556.12 930.417,-1554.3"/>
 <polygon fill="black" stroke="black" points="930.802,-1557.79 940.655,-1553.9 930.523,-1550.8 930.802,-1557.79"/>
-<text text-anchor="middle" x="776" y="-1760.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-1760.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:m004 -->
 <g id="node29" class="node"><title>B_:m004</title>
@@ -332,7 +331,7 @@
 <g id="edge44" class="edge"><title>B_:m004&#45;&gt;Rtropicos:40028244</title>
 <path fill="none" stroke="black" d="M636.333,-2054.53C656.005,-2056.13 686.742,-2061.79 704,-2081 731.264,-2111.34 690.688,-2144.85 722,-2171 750.767,-2195.02 847.155,-2191.65 918.179,-2185.33"/>
 <polygon fill="black" stroke="black" points="918.827,-2188.79 928.462,-2184.38 918.183,-2181.82 918.827,-2188.79"/>
-<text text-anchor="middle" x="776" y="-2190.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-2190.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:m005 -->
 <g id="node39" class="node"><title>B_:m005</title>
@@ -387,7 +386,7 @@
 <g id="edge56" class="edge"><title>B_:m005&#45;&gt;Rtropicos:1300071</title>
 <path fill="none" stroke="black" d="M635.971,-978.452C656.652,-974.471 691.667,-968.042 722,-964 788.145,-955.185 863.569,-948.312 918.993,-943.853"/>
 <polygon fill="black" stroke="black" points="919.412,-947.331 929.103,-943.048 918.857,-940.353 919.412,-947.331"/>
-<text text-anchor="middle" x="776" y="-965.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-965.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:m006 -->
 <g id="node49" class="node"><title>B_:m006</title>
@@ -432,7 +431,7 @@
 <g id="edge68" class="edge"><title>B_:m006&#45;&gt;Rncbitax:29780</title>
 <path fill="none" stroke="black" d="M636.352,-913.82C656.343,-912.547 687.65,-907.187 704,-887 730.554,-854.215 690.785,-726.383 722,-698 751.97,-670.748 862.451,-679.364 934.501,-688.441"/>
 <polygon fill="black" stroke="black" points="934.471,-691.967 944.838,-689.78 935.37,-685.025 934.471,-691.967"/>
-<text text-anchor="middle" x="776" y="-699.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-699.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:m007 -->
 <g id="node57" class="node"><title>B_:m007</title>
@@ -487,7 +486,7 @@
 <g id="edge80" class="edge"><title>B_:m007&#45;&gt;Rtropicos:40007649</title>
 <path fill="none" stroke="black" d="M636.161,-2211.34C655.982,-2212.75 687.135,-2218.24 704,-2238 739.582,-2279.69 682.639,-2321.86 722,-2360 776.009,-2412.34 866.475,-2412.94 929.262,-2405.32"/>
 <polygon fill="black" stroke="black" points="930.02,-2408.75 939.48,-2403.98 929.109,-2401.81 930.02,-2408.75"/>
-<text text-anchor="middle" x="776" y="-2407.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-2407.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:m008 -->
 <g id="node67" class="node"><title>B_:m008</title>
@@ -547,7 +546,7 @@
 <g id="edge92" class="edge"><title>B_:m008&#45;&gt;Rtropicos:40015658</title>
 <path fill="none" stroke="black" d="M635.839,-565.589C654.253,-562.408 683.155,-555.429 704,-541 714.673,-533.612 711.1,-525.048 722,-518 770.428,-486.686 791.586,-498.971 848,-487 872.957,-481.704 900.382,-476.591 924.932,-472.265"/>
 <polygon fill="black" stroke="black" points="925.653,-475.692 934.901,-470.524 924.448,-468.797 925.653,-475.692"/>
-<text text-anchor="middle" x="776" y="-519.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-519.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:m009 -->
 <g id="node78" class="node"><title>B_:m009</title>
@@ -597,7 +596,7 @@
 <g id="edge104" class="edge"><title>B_:m009&#45;&gt;Rncbitax:9694</title>
 <path fill="none" stroke="black" d="M621.72,-496.132C630.924,-456.908 658.756,-363.472 722,-322 786.678,-279.588 878.907,-280.865 938.861,-287.757"/>
 <polygon fill="black" stroke="black" points="938.577,-291.248 948.931,-289.002 939.436,-284.301 938.577,-291.248"/>
-<text text-anchor="middle" x="776" y="-323.4" font-family="Times,serif" font-size="14.00">dsw:toTaxon</text>
+<text text-anchor="middle" x="776" y="-323.4" font-family="Times,serif" font-size="14.00">tc:toTaxon</text>
 </g>
 <!-- B_:n010 -->
 <g id="node87" class="node"><title>B_:n010</title>
