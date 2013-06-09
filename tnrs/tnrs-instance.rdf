@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY tc "http://rs.tdwg.org/ontology/voc/TaxonConcept#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY ncbitax "http://www.ncbi.nlm.nih.gov/taxonomy" >
+    <!ENTITY tropicos "http://www.tropicos.org/Name" >
+    <!ENTITY tnrs "http://phylotastic.org/terms/tnrs.rdf#" >
+]>
+
+
+<rdf:RDF xmlns="http://phylotastic.org/terms/tnrs-instance.rdf#"
+     xml:base="http://phylotastic.org/terms/tnrs-instance.rdf"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:tnrs="http://phylotastic.org/terms/tnrs.rdf#"
+     xmlns:tc="http://rs.tdwg.org/ontology/voc/TaxonConcept#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:ncbitax="http://www.ncbi.nlm.nih.gov/taxonomy/"
+     xmlns:tropicos="http://www.tropicos.org/Name/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#request -->
+
+    <rdf:Description rdf:ID="request">
+        <rdf:type rdf:resource="&tnrs;ResolutionRequest"/>
+        <tnrs:submitDate>Mon Jun 11 20:25:16 2012</tnrs:submitDate>
+        <tnrs:usedSource rdf:resource="http://tnrs.iplantcollaborative.org/"/>
+        <tnrs:usedSource rdf:resource="&ncbitax;"/>
+    </rdf:Description>
+    
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#001 -->
+
+    <rdf:Description rdf:nodeID="m001">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:acceptedName>Vitis vinifera</tnrs:acceptedName>
+        <tnrs:matchedName>Vitis vinifera</tnrs:matchedName>
+        <tnrs:score>1.0</tnrs:score>
+        <tnrs:usedSource rdf:resource="http://tnrs.iplantcollaborative.org/"/>
+        <tc:toTaxon rdf:resource="http://www.tropicos.org/Name/34000217"/>
+    </rdf:Description>
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#003 -->
+
+    <rdf:Description rdf:nodeID="m003">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:matchedName>Vitis vinifera</tnrs:matchedName>
+        <tnrs:score>1.0</tnrs:score>
+        <tnrs:acceptedName>Vitis vinifera</tnrs:acceptedName>
+        <tnrs:usedSource rdf:resource="&ncbitax;"/>
+        <tc:toTaxon rdf:resource="&ncbitax;/29760"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#004 -->
+
+    <rdf:Description rdf:nodeID="m004">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:matchedName>Humbertia</tnrs:matchedName>
+        <tnrs:score>0.46973019780931</tnrs:score>
+        <tnrs:acceptedName>Humbertia</tnrs:acceptedName>
+        <tnrs:usedSource rdf:resource="http://tnrs.iplantcollaborative.org/"/>
+        <tc:toTaxon rdf:resource="http://www.tropicos.org/Name/40028244"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#005 -->
+
+    <rdf:Description rdf:nodeID="m005">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:matchedName>Mangifera indica</tnrs:matchedName>
+        <tnrs:acceptedName>Mangifera indica</tnrs:acceptedName>
+        <tnrs:score>0.98210117101673</tnrs:score>
+        <tnrs:usedSource rdf:resource="http://tnrs.iplantcollaborative.org/"/>
+        <tc:toTaxon rdf:resource="http://www.tropicos.org/Name/1300071"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#006 -->
+
+    <rdf:Description rdf:nodeID="m006">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:acceptedName>Mangifera indica</tnrs:acceptedName>
+        <tnrs:matchedName>Mangifera indica</tnrs:matchedName>
+        <tnrs:score>1.0</tnrs:score>
+        <tnrs:usedSource rdf:resource="&ncbitax;"/>
+        <tc:toTaxon rdf:resource="&ncbitax;/29780"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#007 -->
+
+    <rdf:Description rdf:nodeID="m007">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:acceptedName>Euthamia</tnrs:acceptedName>
+        <tnrs:score>0.45701346754469</tnrs:score>
+        <tnrs:matchedName>Euthamia</tnrs:matchedName>
+        <tnrs:usedSource rdf:resource="http://tnrs.iplantcollaborative.org/"/>
+        <tc:toTaxon rdf:resource="http://www.tropicos.org/Name/40007649"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#008 -->
+
+    <rdf:Description rdf:nodeID="m008">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:acceptedName>Megalachne</tnrs:acceptedName>
+        <tnrs:matchedName>Pantathera</tnrs:matchedName>
+        <tnrs:score>0.47790686999749</tnrs:score>
+        <tnrs:usedSource rdf:resource="http://tnrs.iplantcollaborative.org/"/>
+        <tc:toTaxon rdf:resource="http://www.tropicos.org/Name/40015658"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#009 -->
+
+    <rdf:Description rdf:nodeID="m009">
+        <rdf:type rdf:resource="&tnrs;Match"/>
+        <tnrs:score>1.0</tnrs:score>
+        <tnrs:matchedName>Panthera tigris</tnrs:matchedName>
+        <tnrs:acceptedName>Panthera tigris</tnrs:acceptedName>
+        <tnrs:usedSource rdf:resource="&ncbitax;"/>
+        <tc:toTaxon rdf:resource="&ncbitax;/9694"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#010 -->
+
+    <rdf:Description rdf:nodeID="n010">
+        <rdf:type rdf:resource="&tnrs;NameResolution"/>
+        <tnrs:matchCount>1</tnrs:matchCount>
+        <tnrs:submittedName>Humbert humbert</tnrs:submittedName>
+        <dcterms:source rdf:resource="#request"/>
+        <tnrs:matches rdf:nodeID="m004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#011 -->
+
+    <rdf:Description rdf:nodeID="n011">
+        <rdf:type rdf:resource="&tnrs;NameResolution"/>
+        <tnrs:submittedName>Vitis vinifera</tnrs:submittedName>
+        <tnrs:matchCount>2</tnrs:matchCount>
+        <tnrs:matches rdf:nodeID="m001"/>
+        <dcterms:source rdf:resource="#request"/>
+        <tnrs:matches rdf:nodeID="m003"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#012 -->
+
+    <rdf:Description rdf:nodeID="n012">
+        <rdf:type rdf:resource="&tnrs;NameResolution"/>
+        <tnrs:submittedName>Magnifera indica</tnrs:submittedName>
+        <tnrs:matchCount>2</tnrs:matchCount>
+        <dcterms:source rdf:resource="#request"/>
+        <tnrs:matches rdf:nodeID="m005"/>
+        <tnrs:matches rdf:nodeID="m006"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#013 -->
+
+    <rdf:Description rdf:nodeID="n013">
+        <rdf:type rdf:resource="&tnrs;NameResolution"/>
+        <tnrs:matchCount>1</tnrs:matchCount>
+        <tnrs:submittedName>Eutamias minimus</tnrs:submittedName>
+        <dcterms:source rdf:resource="#request"/>
+        <tnrs:matches rdf:nodeID="m007"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#014 -->
+
+    <rdf:Description rdf:nodeID="n014">
+        <rdf:type rdf:resource="&tnrs;NameResolution"/>
+        <tnrs:submittedName>Panthera tigris</tnrs:submittedName>
+        <tnrs:matchCount>2</tnrs:matchCount>
+        <dcterms:source rdf:resource="#request"/>
+        <tnrs:matches rdf:nodeID="m008"/>
+        <tnrs:matches rdf:nodeID="m009"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#otu1 -->
+
+    <rdf:Description rdf:ID="otu1">
+        <rdf:type rdf:resource="&obo;CDAO_0000138"/>
+        <rdfs:label>Humbert humbert NABOK. 1955</rdfs:label>
+        <tnrs:resolvesAs rdf:nodeID="n010"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#otu2 -->
+
+    <rdf:Description rdf:ID="otu2">
+        <rdf:type rdf:resource="&obo;CDAO_0000138"/>
+        <rdfs:label>Vitis vinifera JQ277473</rdfs:label>
+        <tnrs:resolvesAs rdf:nodeID="n011"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#otu3 -->
+
+    <rdf:Description rdf:ID="otu3">
+        <rdf:type rdf:resource="&obo;CDAO_0000138"/>
+        <rdfs:label>Mangifera indica BioBot06618</rdfs:label>
+        <tnrs:resolvesAs rdf:nodeID="n012"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#otu4 -->
+
+    <rdf:Description rdf:ID="otu4">
+        <rdf:type rdf:resource="&obo;CDAO_0000138"/>
+        <rdfs:label>Eutamias minimus (Nutt.) Cass.</rdfs:label>
+        <tnrs:resolvesAs rdf:nodeID="n013"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://phylotastic.org/terms/tnrs-instance.rdf#otu5 -->
+
+    <rdf:Description rdf:ID="otu5">
+        <rdf:type rdf:resource="&obo;CDAO_0000138"/>
+        <rdfs:label>Panthera tigris HQ263408</rdfs:label>
+        <tnrs:resolvesAs rdf:nodeID="n014"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://tnrs.iplantcollaborative.org/ -->
+
+    <rdf:Description rdf:about="http://tnrs.iplantcollaborative.org/">
+        <rdf:type rdf:resource="&tnrs;ResolutionSource"/>
+        <dc:title>iPlant Collaborative TNRS v3.0</dc:title>
+        <tnrs:hasRank>2</tnrs:hasRank>
+        <tnrs:sourceStatus>200: OK</tnrs:sourceStatus>
+        <dc:description>The iPlant Collaborative TNRS provides parsing and fuzzy matching for plant taxa.</dc:description>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/taxonomy -->
+
+    <rdf:Description rdf:about="&ncbitax;">
+        <rdf:type rdf:resource="&tnrs;ResolutionSource"/>
+        <dc:title>NCBI</dc:title>
+        <tnrs:hasRank>3</tnrs:hasRank>
+        <dc:description>NCBI Taxonomy</dc:description>
+        <tnrs:sourceStatus>200: OK</tnrs:sourceStatus>
+    </rdf:Description>
+    
+
+</rdf:RDF>
+

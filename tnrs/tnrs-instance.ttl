@@ -1,0 +1,143 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://phylotastic.org/terms/tnrs-instance.rdf#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix tnrs: <http://phylotastic.org/terms/tnrs.rdf#> .
+@prefix tc: <http://rs.tdwg.org/ontology/voc/TaxonConcept#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ncbitax: <http://www.ncbi.nlm.nih.gov/taxonomy/> .
+@prefix tropicos: <http://www.tropicos.org/Name/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:otu1
+    tnrs:resolvesAs [
+        tnrs:matchCount "1" ;
+        tnrs:matches [
+            tnrs:acceptedName "Humbertia" ;
+            tnrs:matchedName "Humbertia" ;
+            tnrs:score "0.46973019780931" ;
+            tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
+            tc:toTaxon <http://www.tropicos.org/Name/40028244> ;
+            a tnrs:Match
+        ] ;
+        tnrs:submittedName "Humbert humbert" ;
+        dcterms:source :request ;
+        a tnrs:NameResolution
+    ] ;
+    a obo:CDAO_0000138 ;
+    rdfs:label "Humbert humbert NABOK. 1955" .
+
+:otu2
+    tnrs:resolvesAs [
+        tnrs:matchCount "2" ;
+        tnrs:matches [
+            tnrs:acceptedName "Vitis vinifera" ;
+            tnrs:matchedName "Vitis vinifera" ;
+            tnrs:score "1.0" ;
+            tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
+            tc:toTaxon <http://www.tropicos.org/Name/34000217> ;
+            a tnrs:Match
+        ], [
+            tnrs:acceptedName "Vitis vinifera" ;
+            tnrs:matchedName "Vitis vinifera" ;
+            tnrs:score "1.0" ;
+            tnrs:usedSource <http://www.ncbi.nlm.nih.gov/taxonomy> ;
+            tc:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/29760> ;
+            a tnrs:Match
+        ] ;
+        tnrs:submittedName "Vitis vinifera" ;
+        dcterms:source :request ;
+        a tnrs:NameResolution
+    ] ;
+    a obo:CDAO_0000138 ;
+    rdfs:label "Vitis vinifera JQ277473" .
+
+:otu3
+    tnrs:resolvesAs [
+        tnrs:matchCount "2" ;
+        tnrs:matches [
+            tnrs:acceptedName "Mangifera indica" ;
+            tnrs:matchedName "Mangifera indica" ;
+            tnrs:score "0.98210117101673" ;
+            tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
+            tc:toTaxon <http://www.tropicos.org/Name/1300071> ;
+            a tnrs:Match
+        ], [
+            tnrs:acceptedName "Mangifera indica" ;
+            tnrs:matchedName "Mangifera indica" ;
+            tnrs:score "1.0" ;
+            tnrs:usedSource <http://www.ncbi.nlm.nih.gov/taxonomy> ;
+            tc:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/29780> ;
+            a tnrs:Match
+        ] ;
+        tnrs:submittedName "Magnifera indica" ;
+        dcterms:source :request ;
+        a tnrs:NameResolution
+    ] ;
+    a obo:CDAO_0000138 ;
+    rdfs:label "Mangifera indica BioBot06618" .
+
+:otu4
+    tnrs:resolvesAs [
+        tnrs:matchCount "1" ;
+        tnrs:matches [
+            tnrs:acceptedName "Euthamia" ;
+            tnrs:matchedName "Euthamia" ;
+            tnrs:score "0.45701346754469" ;
+            tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
+            tc:toTaxon <http://www.tropicos.org/Name/40007649> ;
+            a tnrs:Match
+        ] ;
+        tnrs:submittedName "Eutamias minimus" ;
+        dcterms:source :request ;
+        a tnrs:NameResolution
+    ] ;
+    a obo:CDAO_0000138 ;
+    rdfs:label "Eutamias minimus (Nutt.) Cass." .
+
+:otu5
+    tnrs:resolvesAs [
+        tnrs:matchCount "2" ;
+        tnrs:matches [
+            tnrs:acceptedName "Megalachne" ;
+            tnrs:matchedName "Pantathera" ;
+            tnrs:score "0.47790686999749" ;
+            tnrs:usedSource <http://tnrs.iplantcollaborative.org/> ;
+            tc:toTaxon <http://www.tropicos.org/Name/40015658> ;
+            a tnrs:Match
+        ], [
+            tnrs:acceptedName "Panthera tigris" ;
+            tnrs:matchedName "Panthera tigris" ;
+            tnrs:score "1.0" ;
+            tnrs:usedSource <http://www.ncbi.nlm.nih.gov/taxonomy> ;
+            tc:toTaxon <http://www.ncbi.nlm.nih.gov/taxonomy/9694> ;
+            a tnrs:Match
+        ] ;
+        tnrs:submittedName "Panthera tigris" ;
+        dcterms:source :request ;
+        a tnrs:NameResolution
+    ] ;
+    a obo:CDAO_0000138 ;
+    rdfs:label "Panthera tigris HQ263408" .
+
+:request
+    tnrs:submitDate "Mon Jun 11 20:25:16 2012" ;
+    tnrs:usedSource <http://tnrs.iplantcollaborative.org/>, <http://www.ncbi.nlm.nih.gov/taxonomy> ;
+    a tnrs:ResolutionRequest .
+
+<http://tnrs.iplantcollaborative.org/>
+    tnrs:hasRank "2" ;
+    tnrs:sourceStatus "200: OK" ;
+    dc:description "The iPlant Collaborative TNRS provides parsing and fuzzy matching for plant taxa." ;
+    dc:title "iPlant Collaborative TNRS v3.0" ;
+    a tnrs:ResolutionSource .
+
+<http://www.ncbi.nlm.nih.gov/taxonomy>
+    tnrs:hasRank "3" ;
+    tnrs:sourceStatus "200: OK" ;
+    dc:description "NCBI Taxonomy" ;
+    dc:title "NCBI" ;
+    a tnrs:ResolutionSource .
+
